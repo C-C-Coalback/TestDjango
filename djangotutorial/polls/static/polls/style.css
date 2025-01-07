@@ -3,6 +3,6 @@ li a {
 }
 
 body {
-    background: white url("images/ImperialAquila.jpg") no-repeat;
-    background-size: 100% auto;
+    background: black url("images/ImperialAquila.jpg") no-repeat;
+    background-size: cover;
 }
