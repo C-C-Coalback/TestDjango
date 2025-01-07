@@ -31,5 +31,6 @@ def testing(request):
     template = loader.get_template('template.html')
     context = {
         'mymembers': mymembers,
+        'greeting': 2,
     }
     return HttpResponse(template.render(context, request))

@@ -1,17 +1,14 @@
 <!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+<link rel="stylesheet" href="{% static 'myfirst.css' %}">
 <html>
 <body>
+{% include "mymenu.html" with me="TOBIAS" sponsor="W3SCHOOLS" %}
 
-{% with firstname="Tobias" %}
-<h1>Hello {{ firstname }}, how are you?</h1>
-{% endwith %}
+<h1>Welcome</h1>
 
-
-<ul>
-  {% for x in mymembers %}
-    <li>{{ x.firstname }}</li>
-  {% endfor %}
-</ul>
+<p>This is my webpage</p>
 
 </body>
 </html>
